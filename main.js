@@ -5,11 +5,11 @@ let database = require("./database");
 const app = express();
 const postData = require("./Routes/post");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-const cors = require("cors");
 
 app.get("/", (req, res) => {
   res.send("server is running Now");

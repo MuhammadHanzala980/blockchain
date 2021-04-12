@@ -2,7 +2,6 @@ let mongoose = require("mongoose");
 
 let BlockChainModel = require("./model");
 
-// Connect to DB
 mongoose.connect(
   "mongodb+srv://hanzala:anomno@cluster0.zwkdx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   {
@@ -21,3 +20,5 @@ let connectionCallback = () => {};
 module.exports.onConnect = (callback) => {
   connectionCallback = callback;
 };
+
+

@@ -1,6 +1,6 @@
 const express = require("express");
 let BlockChain = require("../blockChain");
-const route = express.Router()
+const route = express.Router();
 
 route.post("/postData", (req, res) => {
   console.log("Running===>", req.body);
@@ -16,4 +16,4 @@ route.post("/postData", (req, res) => {
   });
 });
 
-module.exports = route
+module.exports = route;
