@@ -1,6 +1,6 @@
 require("dotenv/config");
 const express = require("express");
-let database = require("./database");
+// let database = require("./database");
 
 // const postData = require("./Routes/post");
 // const stripe = require("./Routes/stripe");
