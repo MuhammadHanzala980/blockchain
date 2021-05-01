@@ -4,17 +4,17 @@ let database = require("./database");
 
 const app = express();
 const postData = require("./Routes/post");
-const bodyParser = require("body-parser");
 const cors = require("cors");
-
+const stripe = require("./Routes/stripe");
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.send("server is running Now");
+  res.send("Server is Running Now");
 });
 app.use("/app", postData);
+app.use("/payment", stripe);
 
 app.set("port", process.env.PORT || 9000);
 var server = app.listen(app.get("port"), function () {
