@@ -2,10 +2,10 @@ require("dotenv/config");
 const express = require("express");
 let database = require("./database");
 
-const app = express();
 // const postData = require("./Routes/post");
-const cors = require("cors");
 // const stripe = require("./Routes/stripe");
+const app = express();
+const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

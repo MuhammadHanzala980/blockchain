@@ -10,3 +10,5 @@ mongoose.connect(uri, {
 });
 
 var db = mongoose.connection;
+
+module.exports = db;
