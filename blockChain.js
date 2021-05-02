@@ -8,7 +8,7 @@ const firestore = firebase.firestore();
 
 const TARGET_HASH = hash(1);
 
-class BlockChain {
+class blockChain {
   constructor() {
     // Create the chain
     this.chain = [];
@@ -87,4 +87,4 @@ class BlockChain {
   }
 }
 
-module.exports = BlockChain;
+module.exports = blockChain;

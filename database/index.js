@@ -1,5 +1,3 @@
-let BlockChainModel = require("./model");
-
 var mongoose = require("mongoose");
 var uri = "mongodb+srv://hanzala:anomno@cluster0-zwkdx.mongodb.net/PROJECT0?retryWrites=true&w=majority";
 
@@ -11,4 +9,3 @@ mongoose.connect(uri, {
 
 var db = mongoose.connection;
 
-module.exports = db;

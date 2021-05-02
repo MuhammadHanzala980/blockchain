@@ -9,7 +9,7 @@ route.post("/postData", (req, res) => {
   blockChain.addNewData(req.body.userName, req.body.indexName, req.body.text2, req.body.last_sale, req.body.text1, req.body.buyState);
   blockChain.addNewBlock(null);
 
-  console.log("Chain: ", blockChain.chain);
+  // console.log("Chain: ", blockChain.chain);
 
   res.send({
     data: blockChain.chain,
