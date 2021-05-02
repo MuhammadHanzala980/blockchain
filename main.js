@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 
 let database = require("./database");
 
-// const postData = require("./Routes/post");
+const postData = require("./Routes/post");
 const stripe = require("./Routes/stripe");
 const port = process.env.PORT || 9000;
 const app = express();
