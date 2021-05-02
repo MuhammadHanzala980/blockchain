@@ -1,5 +1,7 @@
+
 var mongoose = require("mongoose");
 var uri = "mongodb+srv://hanzala:anomno@cluster0-zwkdx.mongodb.net/PROJECT0?retryWrites=true&w=majority";
+require("./model");
 
 mongoose.connect(uri, {
   useUnifiedTopology: true,

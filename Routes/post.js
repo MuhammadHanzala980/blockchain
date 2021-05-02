@@ -2,7 +2,7 @@ const express = require("express");
 let BlockChain = require("../blockChain");
 const route = express.Router();
 
-route.post("/postData", (req, res) => {
+route.post("/addNewBlock", (req, res) => {
   // console.log("Running ==»»", req.body);
   let blockChain = new BlockChain();
   let hash = require("object-hash");
